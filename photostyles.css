@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  overflow: hidden;
+  background-color: #e0e0eb;
+}
+.page {
+
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0e0eb;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.navbar {
+  list-style-type: none;
+  font-size: 150%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navlinks {
+  float: left;
+}
+
+.navlinks a {
+  display: block;
+  background-color: #404040;
+  text-align: center;
+  padding: 37px 45px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navlinks a:hover {
+  background-color: #111;
+}
+a {
+  display: block;
+  padding: 8px;
+  background-color: #404040;
+  border-radius: 3px;
+  border: 1px solid #111;
+  color: #99ffcc;
+}
+.header {
+  display: flex;
+  font-size: 200%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-style: italic;
+  font-family: cursive, Helvetica, sans-serif;
+  word-wrap: normal;
+}
+.picture {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 5px;
+}
+.bodytext {
+  display: flex;
+  float: right;
+  font-style: italic;
+  font-family: cursive, Helvetica, sans-serif;
+  word-wrap: normal;
+}
+.text-col {
+  width: 400px;
+  padding-left: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.review {
+  flex: none;
+  display: block;
+  border: solid 5px #404040;
+  border-radius: 15px;
+  padding: 20px;
+  margin: auto;
+  font-size: 125%;
+  background-color: #99ffcc;
+}
+.spacer {
+  height: 25px;
+}
+.columns {
+  flex-direction: column;
+}
+.rev1 {
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+}
+.rev2 {
+  font-style: oblique;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.rev3 {
+  font-style: italic;
+  font-family: cursive, Helvetica, sans-serif;
+}
+.rev4 {
+  font-style: oblique;
+}
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: #F09A9D; /* Red */
+  }
+    .page {
+      width: 375px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  .page {
+    overflow: hidden;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  .page {
+    width: 900px;
+    margin: 0 auto;
+  }
+
+}
